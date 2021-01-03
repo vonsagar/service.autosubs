@@ -3,6 +3,7 @@
     <!-- General -->
     <category id="general" label="30010">
         <setting id="debug" type="bool" label="30100" default="false"/>
+        <setting id="delay" type="number" label="90000" default="8"/>
     </category>
     
     <!-- Exclusions -->

@@ -21,6 +21,7 @@ __settings__ = xbmcaddon.Addon("service.autosubs")
 
 ignore_words = (__settings__.getSetting('ignore_words').split(','))
 ExcludeTime = int((__settings__.getSetting('ExcludeTime')))*60
+DelayTime = int((__settings__.getSetting('delay')))*1000
 
 sys.path.append(__resource__)
 
@@ -110,7 +111,7 @@ class AutoSubsPlayer(xbmc.Player):
         if self.run:
             movieFullPath = xbmc.Player().getPlayingFile()
             Debug("movieFullPath '%s'" % movieFullPath)
-            xbmc.sleep(1000)
+            xbmc.sleep(DelayTime)
             totalTime = xbmc.Player().getTotalTime()
             Debug("totalTime '%s'" % totalTime)
 			

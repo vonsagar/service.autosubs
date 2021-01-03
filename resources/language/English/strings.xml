@@ -3,6 +3,7 @@
     <!-- General -->
     <string id="30010">General</string>
     <string id="30100">Enable debug mode</string>
+    <string id="90000">Delay</string>
 
     <!-- Exclusions -->
     <string id="30020">Exclusions</string>
